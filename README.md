@@ -47,6 +47,40 @@ Calculated cosine similarity between term pairs.
 - **Scikit-learn** – for TF-IDF vectorization and cosine similarity computation
 - **NumPy & Pandas** – for data handling and similarity calculations
 
+# Multi-Class Multi-Label Movie Genre Classification
+
+### Overview
+This project focuses on multi-class multi-label classification of movie genres based on their plot synopses. The dataset consists of human-written and AI-generated movie plot summaries, and each movie is labeled with one or more genres from the following nine categories:
+
+- Comedy
+- Cult
+- Flashback
+- Historical
+- Murder
+- Revenge
+- Romantic
+- Sci-Fi
+- Violence
+
+Since each movie can belong to multiple genres, this task is classified as a multi-class, multi-label classification problem.
+
+### Tasks Implemented
+
+**Task 1: Traditional Deep Learning Approach**
+- Implemented a Long Short-Term Memory (LSTM) or BiLSTM network.
+- Used word embeddings (e.g., Word2Vec, GloVe, or FastText) for feature representation.
+- Addressed class imbalance using techniques like class weighting and oversampling/undersampling.
+- Optimized hyperparameters (dropout rate, learning rate, batch size) for better performance.
+
+**Task 2: Fine-Tuning Pretrained Transformers**
+- Fine-tuned a pretrained model (one of the following):
+  - BERT (google-bert/bert-base-uncased)
+  - T5 (google-t5/t5-base)
+  - RoBERTa (FacebookAI/roberta-base)
+- Implemented multi-label classification using sigmoid activation.
+- Used TPUs available in Google Colab to accelerate training.
+- Experimented with different learning rates, batch sizes, and tokenization strategies.
+
 ## Setup and Usage
 
 1. **Clone the repository:**
